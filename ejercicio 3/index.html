@@ -15,8 +15,33 @@
   </head>
   <body>
     <div
-      class="container d-flex justify-content-center formulario align-items-center flex-column"
-    ></div>
+      class="container d-flex vh-100 justify-content-center formulario align-items-center flex-column"
+    >
+      <div class="rounded shadow-lg p-5">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Ingresa la venta</span
+          >
+          <input
+            type="number"
+            class="form-control inputVenta"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+            onkeyup="tomarVenta(event)"
+          />
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Venta</th>
+              <th scope="col">Normal</th>
+              <th scope="col">Descuento</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider tableVenta"></tbody>
+        </table>
+      </div>
+    </div>
     <script src="main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
