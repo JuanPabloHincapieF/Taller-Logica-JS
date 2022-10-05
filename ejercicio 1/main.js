@@ -1,4 +1,7 @@
 // Ejercicio 1
+
+// Hacer un programa que lea los nombres y las edades de varias personas (n), al finalizar el programa debe mostrar el nombre y la edad de la persona mayor, también el nombre y la edad de la persona menor.
+
 let personas = prompt("Ingresa la cantidad de personas");
 let contenedor = document.querySelector(".formulario");
 crearForm();

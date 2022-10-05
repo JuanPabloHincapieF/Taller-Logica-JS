@@ -1,3 +1,7 @@
+// Ejercicio 2
+
+// Hacer un algoritmo que lea n notas y nos indique cuantas con mayores a cero y cuantas son menores a cero, también cuántos son iguales a cero.
+
 let cantidad = parseInt(prompt("cuantas notas deseas calcular?"));
 let numeros = [];
 let contadorNegativo = 0;
@@ -15,10 +19,7 @@ for (let i = 0; i < numeros.length; i++) {
     contadorCero++;
   }
 }
-document.write(
-  `<h1>Los numeros negativos fueron ${contadorNegativo}</h1> <br>`
-);
-document.write(`<h1>Los numeros iguales a fueron ${contadorCero}</h1><br>`);
-document.write(
-  `<h1>Los numeros positivos fueron ${contadorPositivo}</h1> <br>`
-);
+
+let imprimir = (document.querySelector(
+  ".formulario"
+).innerHTML = `<h1>Los numeros negativos fueron ${contadorNegativo}</h1> <br> <h1>Los numeros iguales a fueron ${contadorCero}</h1><br> <h1>Los numeros positivos fueron ${contadorPositivo}</h1> <br>`);
