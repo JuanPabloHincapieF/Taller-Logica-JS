@@ -22,4 +22,4 @@ for (let i = 0; i < numeros.length; i++) {
 
 let imprimir = (document.querySelector(
   ".formulario"
-).innerHTML = `<h1>Los numeros negativos fueron ${contadorNegativo}</h1> <br> <h1>Los numeros iguales a fueron ${contadorCero}</h1><br> <h1>Los numeros positivos fueron ${contadorPositivo}</h1> <br>`);
+).innerHTML = `<h1>Los numeros negativos fueron ${contadorNegativo}</h1> <br> <h1>Los numeros iguales a 0 fueron ${contadorCero}</h1><br> <h1>Los numeros positivos fueron ${contadorPositivo}</h1> <br>`);
