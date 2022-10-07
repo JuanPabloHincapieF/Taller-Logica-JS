@@ -44,8 +44,8 @@ let menorNombre = "";
 
 function takeValues() {
   for (let i = 1; i <= personas; i++) {
-    nombre = document.querySelector(`.inputNombre${i}`).value;
-    edad = document.querySelector(`.inputEdad${i}`).value;
+    let nombre = document.querySelector(`.inputNombre${i}`).value;
+    let edad = document.querySelector(`.inputEdad${i}`).value;
 
     if (edad > mayorEdad) {
       mayorEdad = edad;
