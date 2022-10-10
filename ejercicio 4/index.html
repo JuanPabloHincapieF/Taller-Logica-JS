@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fibonacci</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <div
+      class="container d-flex vh-100 justify-content-center formulario align-items-center flex-column"
+    >
+      <div
+        class="rounded shadow-lg p-5 d-flex flex-column justify-content-center"
+      >
+        <h1 class="h1 my-3">Secuencia Fibonacci</h1>
+        <div class="input-group my-3">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Cantidad</span
+          >
+          <input
+            type="number"
+            class="form-control inputCantidad"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn my-3 btn-warning"
+          onclick="fibonacci()"
+        >
+          Calcular
+        </button>
+        <div class="resultado"></div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
